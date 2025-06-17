@@ -1,0 +1,26 @@
+---
+import "../globals.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Learn in which Tailwindcss breakpoint the current screen size is."
+    />
+    <meta name="keywords" content="tailwindcss, breakpoints, responsive design, web development" />
+    <meta name="author" content="vcz" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <title>Tailwindcss Breakpoints</title>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center border-4 border-dashed border-red-900 bg-red-500 sm:border-orange-900 sm:bg-orange-500 md:border-yellow-900 md:bg-yellow-500 lg:border-green-900 lg:bg-green-500 xl:border-blue-900 xl:bg-blue-500 2xl:border-purple-900 2xl:bg-purple-500 data-[isnothome=true]:bg-white data-[isnothome=true]:border-none"
+		data-isnothome={Astro.url.pathname !== "/"}
+  >
+    <slot />
+  </body>
+</html>

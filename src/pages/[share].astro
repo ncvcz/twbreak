@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const { share } = Astro.params;
+
+if (!share) return Astro.redirect("/");
+
+const [width, height] = Buffer.from(share, "base64").toString("utf8").split(",");
+---
+
+<Layout>
+  <iframe src="/?shared" class="border-none" style={`width: ${width}px; height: ${height}px;`}></iframe>
+</Layout>

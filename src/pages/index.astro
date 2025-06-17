@@ -1,0 +1,18 @@
+---
+import WindowDetails from "../components/window";
+import Layout from "../layouts/Layout.astro";
+
+const shared = Astro.url.searchParams.has("shared");
+---
+
+<Layout>
+  <div class="space-y-2 text-center">
+    <h1 class="block text-center text-9xl font-extrabold sm:hidden">xs</h1>
+    <h1 class="hidden text-9xl font-extrabold sm:block md:hidden">sm</h1>
+    <h1 class="hidden text-9xl font-extrabold md:block lg:hidden">md</h1>
+    <h1 class="hidden text-9xl font-extrabold lg:block xl:hidden">lg</h1>
+    <h1 class="hidden text-9xl font-extrabold xl:block 2xl:hidden">xl</h1>
+    <h1 class="hidden text-9xl font-extrabold 2xl:block">2xl</h1>
+    <WindowDetails client:load shared={shared} />
+  </div>
+</Layout>
