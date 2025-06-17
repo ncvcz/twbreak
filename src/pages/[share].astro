@@ -9,5 +9,5 @@ const [width, height] = Buffer.from(share, "base64").toString("utf8").split(",")
 ---
 
 <Layout>
-  <iframe src="/?shared" class="border-none" style={`width: ${width}px; height: ${height}px;`}></iframe>
+  <iframe src="/?shared" class="border-none absolute" style={`width: ${width}px; height: ${height}px;`}></iframe>
 </Layout>
