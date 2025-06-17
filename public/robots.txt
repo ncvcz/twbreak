@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Disallow: /_astro
 
-Sitemap: https://www.twbreak.com/sitemap-index.xml
+Sitemap: https://twbreak.vcz.me/sitemap-index.xml

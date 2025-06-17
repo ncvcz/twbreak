@@ -10,7 +10,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.twbreak.com",
+  site: "https://twbreak.vcz.me",
   integrations: [react(), sitemap()],
 
   vite: {
